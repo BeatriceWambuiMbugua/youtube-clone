@@ -21,7 +21,11 @@ const Feed = () => {
         }}
       >
         //sidebar component
-        <Sidebar /> 
+        <Sidebar
+          selectedCategory={selectedCategory}
+          setSelectedCategory={setSelectedCategory}
+        />
+         
         <Typography
           className="copyright"
           variant="body2"
