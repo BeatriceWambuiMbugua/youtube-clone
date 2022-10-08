@@ -26,7 +26,7 @@ const SearchBar = () => {
       <IconButton
         type="submit"
         sx={{
-          p: "10px",
+          p: "12px",
           color: "red",
         }}
       >
