@@ -3,10 +3,11 @@ import { ChannelCard, VideoCard } from "./";
 
 import React from "react";
 
-const Videos = ({ videos}) => {
+const Videos = ({ videos, direction }) => {
+  if (!videos?.length) return "Loading";
   return (
     <Stack
-      direction= "row"
+      direction={direction || "row"}
       flexWrap="wrap"
       justifyContent="start"
       alignItems="start"
